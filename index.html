@@ -1,95 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
 </head>
+
 <body>
 
-    <header id="head" class="d-flex justify-content-between">
-        <h1 id="headtit"><a href="img/" ></a>   Bienvenido al Hotel True paradise </h1>
+  <header id="head" class="d-flex justify-content-between">
+    <h1 id="headtit"><a href="img/"></a> Bienvenido al Hotel True paradise </h1>
 
-        <div > <img class="logo" src="img/logo.png" alt=""></div>
-        <aside id="asideright">
-            <ul class="d-flex">
-                <li class="me-4"><a  href="https://www.youtube.com/watch?v=XXllX0A_9KQ">Check-in</a></li>
-                <li class="me-4"><a href="#">Galería</a></li>
-                <li class="me-4"><a href="#">Habitaciones</a></li>
-                <li class="me-4"><a href="#">Reservar</a></li>
-                <li class="me-4"><a href="#">Contáctenos</a></li>
-            </ul>
-        </aside>
-    </header>
+    <div> <img class="logo" src="img/logo.png" alt=""></div>
+    <aside id="asideright">
+      <ul class="d-flex">
+        <li class="me-4"><a href="https://www.youtube.com/watch?v=XXllX0A_9KQ">Check-in</a></li>
+        <li class="me-4"><a href="#">Galería</a></li>
+        <li class="me-4"><a href="#">Habitaciones</a></li>
+        <li class="me-4"><a href="#">Reservar</a></li>
+        <li class="me-4"><a href="#">Contáctenos</a></li>
+      </ul>
+    </aside>
+  </header>
 
 
-<div class="container-fluid mt-12">
-    <form class="row g-2 justify-content-center" >
-    
-        <div class="col-12" style=" background: linear-gradient(to right, #2ecc71, #3498db);">
+  <div class="container-fluid mt-12">
+    <form class="row g-2 justify-content-center">
 
-            <div class="col-md-auto">
-                <select class="form-select" required>
-                  <option selected disabled>SELECCIONE UN DESTINO O UN HOTEL</option>
-                  <option value="1">Hotel Playa</option>
-                  <option value="2">Hotel Montaña</option>
-                  <option value="3">Hotel Ciudad</option>
-                </select>
-              </div>
-          
-              
-              <div class="col-md-auto">
-                <input type="date" class="form-control" placeholder="Fecha de entrada" required>
-              </div>
-          
-           
-              <div class="col-md-auto">
-                <input type="date" class="form-control" placeholder="Fecha de salida" required>
-              </div>
-          
-            
-              <div class="col-md-auto">
-                <select class="form-select" required>
-                  <option selected disabled>1 HABITACIÓN / 2 ADULTOS</option>
-                  <option value="1">1 Habitación / 1 Adulto</option>
-                  <option value="2">1 Habitación / 2 Adultos</option>
-                  <option value="3">2 Habitaciones / 4 Adultos</option>
-                </select>
-              </div>
-          
-          
-              <div class="col-md-auto">
-                <button type="submit" class="btn btn-danger">BUSCAR</button>
-              </div>
-          
-            </form>
-          </div>
+      <div class="col-12" style=" background: linear-gradient(to right, #2ecc71, #3498db);">
 
+        <div class="col-md-auto">
+          <select class="form-select" required>
+            <option selected disabled>SELECCIONE UN DESTINO O UN HOTEL</option>
+            <option value="1">Hotel Playa</option>
+            <option value="2">Hotel Montaña</option>
+            <option value="3">Hotel Ciudad</option>
+          </select>
         </div>
-        <div class="col-12" >
 
 
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-            <div class="col-3"></div>
-
-
-
+        <div class="col-md-auto">
+          <input type="date" class="form-control" placeholder="Fecha de entrada" required>
         </div>
-      
-   
-      
+
+
+        <div class="col-md-auto">
+          <input type="date" class="form-control" placeholder="Fecha de salida" required>
+        </div>
+
+
+        <div class="col-md-auto">
+          <select class="form-select" required>
+            <option selected disabled>1 HABITACIÓN / 2 ADULTOS</option>
+            <option value="1">1 Habitación / 1 Adulto</option>
+            <option value="2">1 Habitación / 2 Adultos</option>
+            <option value="3">2 Habitaciones / 4 Adultos</option>
+          </select>
+        </div>
+
+
+        <div class="col-md-auto">
+          <button type="submit" class="btn btn-danger">BUSCAR</button>
+        </div>
+
+    </form>
+  </div>
+
+  </div>
+
+
+
+  <div class="container">
+    <div class="row">
+
+      <table class="table-info">...</table>
+
+
+      <div class="coldiv-md-3">
+
+
+        <section>
+
+
+          <table id="table" ></table>
+          <table ></table>
+
+          <!-- On rows -->
+          <tr  class="table-primary">
+            <img src="img/room.webp" alt="Habitación" class="img-fluid">
+
+          </tr>
+          <tr class="table-secondary">
+
+            <img src="img/room.webp" alt="Habitación" class="img-fluid">
+          </tr>
+
+          <tr>
+
+            <img src="img/room.webp" alt="Habitación" class="img-fluid">
+            <hr>
+            <hr>
+            <br>
+            <br>
+            <div style="background-color: rgb(234, 238, 238); opacity: 66%;">
+              <p>¡Descubre el refugio perfecto en nuestro hotel! 🌟
+
+                Nuestras habitaciones han sido diseñadas para brindarte confort, elegancia y tranquilidad,
+                convirtiendo cada momento de tu estancia en una experiencia única.
+  
+                🌙 Dormitorios que enamoran
+                Camas premium con colchones ortopédicos y ropa de cama de algodón egipcio para un sueño
+                reparador.
+  
+                Ambientes amplios y luminosos, decorados con un estilo moderno y acogedor.
+  
+                🛁 Baños que son un spa privado
+                Duchas de lluvia con agua a presión perfecta.
+  
+                Amenities de cortesía con fragancias naturales.
+  
+                🌿 Detalles que marcan la diferencia
+                Vistas espectaculares (¡algunas habitaciones tienen balcón privado!).
+  
+                Tecnología inteligente: TV pantalla plana, WiFi ultrarrápido y enchufes USB.
+  
+                ✨ Tu bienestar es nuestra prioridad
+                Cada espacio ha sido pensado para que te sientas como en casa… ¡pero con un toque de lujo
+                discreto!
+  
+                "No solo es una habitación, es tu pequeño santuario durante el viaje."
+  
+                ¿Listo para vivir esta experiencia? ¡Te estamos esperando! 🏨💖</p>
+              <p>Texto de la sección</p>
   
 
-   
+            </div>
+        
 
-    
-
-   
+          </tr>
 
 
-    
+        </section>
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+
+
+
+
 </body>
+
 </html>
