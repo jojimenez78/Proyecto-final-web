@@ -24,9 +24,9 @@ img{
 border-radius: 34%;
 width: 400px;
 height: 400px;
-padding: auto;
-justify-content: center;
-
+padding: auto ;
+justify-content: right;
+margin-right: auto;
 }
 
 .img{
@@ -114,6 +114,16 @@ background: #000;
 background-color: #2ecc71;
 
 }
+
+footer{
+    padding:20px 10px;
+    }
+    footer div{
+    background:#706f6b;
+    text-align:center;
+    line-height:50px;
+    color:rgb(238, 16, 16);
+    }
 
 /* punto de interrupción -Pantalla grande (large) lg*/
 @media(min-width: 1200px) {
