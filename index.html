@@ -10,8 +10,9 @@
 <body>
 
     <header id="head" class="d-flex justify-content-between">
-        <h1 id="headtit">Bienvenido al Hotel True paradise</h1>
-        <div class="logo"> <img src="img/" alt=""></div>
+        <h1 id="headtit"><a href="img/" ></a>   Bienvenido al Hotel True paradise </h1>
+
+        <div > <img class="logo" src="img/logo.png" alt=""></div>
         <aside id="asideright">
             <ul class="d-flex">
                 <li class="me-4"><a  href="https://www.youtube.com/watch?v=XXllX0A_9KQ">Check-in</a></li>
@@ -24,22 +25,65 @@
     </header>
 
 
+<div class="container-fluid mt-12">
+    <form class="row g-2 justify-content-center" >
     
+        <div class="col-12" style=" background: linear-gradient(to right, #2ecc71, #3498db);">
+
+            <div class="col-md-auto">
+                <select class="form-select" required>
+                  <option selected disabled>SELECCIONE UN DESTINO O UN HOTEL</option>
+                  <option value="1">Hotel Playa</option>
+                  <option value="2">Hotel Montaña</option>
+                  <option value="3">Hotel Ciudad</option>
+                </select>
+              </div>
+          
+              
+              <div class="col-md-auto">
+                <input type="date" class="form-control" placeholder="Fecha de entrada" required>
+              </div>
+          
+           
+              <div class="col-md-auto">
+                <input type="date" class="form-control" placeholder="Fecha de salida" required>
+              </div>
+          
+            
+              <div class="col-md-auto">
+                <select class="form-select" required>
+                  <option selected disabled>1 HABITACIÓN / 2 ADULTOS</option>
+                  <option value="1">1 Habitación / 1 Adulto</option>
+                  <option value="2">1 Habitación / 2 Adultos</option>
+                  <option value="3">2 Habitaciones / 4 Adultos</option>
+                </select>
+              </div>
+          
+          
+              <div class="col-md-auto">
+                <button type="submit" class="btn btn-danger">BUSCAR</button>
+              </div>
+          
+            </form>
+          </div>
+
+        </div>
+        <div class="col-12" >
+
+
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+            <div class="col-3"></div>
+
+
+
+        </div>
+      
+   
+      
   
 
-
-
-</header>
-
-<div> 
-
-    <div class="col-lg-4" > <a  href="https://www.youtube.com/watch?v=XXllX0A_9KQ"> Check-in </a> </div>
-    <div class="col-lg-2"></div>
-    <div class="col-lg-4"></div>
-    <div class="col-lg-1"></div>
-</div>
-
-    <h2>Lista con colores Bootstrap</h2>
+   
 
     
 
