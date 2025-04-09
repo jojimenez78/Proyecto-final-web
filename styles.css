@@ -46,9 +46,11 @@
   }
   
   .card__img {
-    width: 500px;
+    width: 100%;
+    object-fit: auto;
     border-radius: 1.5rem;
     padding: auto;
+    height: auto;
   }
   
   .card__data {
