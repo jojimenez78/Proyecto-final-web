@@ -24,19 +24,29 @@
 
     let precioBaseHabitacion = 0;
     switch (habitacion) {
-      case "Estandar":
-        precioBaseHabitacion = 50;
+      case "individual":
+        precioBaseHabitacion = 50000;
         break;
       case "Doble":
-        precioBaseHabitacion = 80;
+        precioBaseHabitacion = 80000;
         break;
       case "Suite":
-        precioBaseHabitacion = 120;
+        precioBaseHabitacion = 190000;
         break;
+        case "cuadruple":
+          precioBaseHabitacion = 140000;
+          break;
+          case "familiar":
+            precioBaseHabitacion = 160000;
+            break;
+            case "tematica":
+              precioBaseHabitacion = 170000;
+              break;    
+            
     }
 
-    const precioPorHuesped = 20;
-    const precioTour = 40;
+    const precioPorHuesped = 20000;
+    const precioTour = 40000;
     const total = precioBaseHabitacion + (parseInt(huespedes) * precioPorHuesped) + (incluyeTour ? precioTour : 0);
 
     document.getElementById('total-pago').textContent = `$${total.toFixed(2)}`;
