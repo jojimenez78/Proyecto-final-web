@@ -251,7 +251,7 @@ h1{
     border: 1px solid rgb(243, 7, 7);
     
     background: linear-gradient(to right, #2ecc71, #3498db);
-    opacity: 89%;
+    opacity: 100%;
 
 }
 [class*="colh1-"] {
@@ -395,6 +395,10 @@ footer{
       opacity: 8%;
       transition: .5s ease;
 
+    }
+
+    #video{
+      
     }
 
 
