@@ -370,6 +370,34 @@ footer{
       font-size: 0.9rem;
     }
 
+    #galeria{
+
+      display: flex;
+      width: 100%;
+      height: 430px;
+      background-color: #181b1d;
+       
+    }
+
+    #imgGaleria:hover {
+      cursor: crosshair;     
+      opacity: 1;
+      width: 300px;
+      filter: contrast(120%);
+    }
+
+ 
+
+    #imgGaleria{
+      width: 0px;
+      flex-grow: 1;
+      object-fit: cover;
+      opacity: 8%;
+      transition: .5s ease;
+
+    }
+
+
     .reserva-formulario {
       padding: 1rem;
       background-color: #eef2f2;
