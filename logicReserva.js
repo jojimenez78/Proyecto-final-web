@@ -12,16 +12,17 @@ const btnRegistrar = document.getElementById("ok");
 
 const data = sessionStorage.getItem('habitacion');
 
+
+const sonido = new Audio("audio/level-up-3-199576.mp3");
+
 btnRegistrar.addEventListener("click", function (e) {
     e.preventDefault();
 
     const errores = [];
 
-   
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const textRegex = /^[a-zA-ZÀ-ÿ\s]+$/; // Letters and spaces, including accented characters
 
-   
     if (nombreForm.value.trim() === "") {
         errores.push("El campo nombre no puede estar vacío.");
     } else if (!textRegex.test(nombreForm.value.trim())) {
@@ -52,10 +53,11 @@ btnRegistrar.addEventListener("click", function (e) {
     const alertaErrores = document.getElementById("alertaErrores");
 
     if (errores.length > 0) {
+        sonido.play(); 
         alertaErrores.style.display = "block";
         alertaErrores.innerHTML = "<strong>Errores:</strong><br>" + errores.join("<br>");
-        window.scrollTo(0, 0); // Scroll to the top of the page on errors
-        return; // Stop execution if errors exist
+        window.scrollTo(0, 0); 
+        return; 
     } else {
         alertaErrores.style.display = "none";
         alertaErrores.innerHTML = "";
