@@ -19,6 +19,9 @@
   --small-font-size: .813rem;
 }
 
+
+
+
 /*========== Responsive typography ==========*/
 @media screen and (min-width: 1120px) {
   :root {
@@ -398,6 +401,17 @@ footer{
     }
 
     #video{
+      
+    }
+
+    .alerta {
+      background-color: #dc3545;
+      color: white;
+      padding: 15px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+      font-weight: 600;
+      box-shadow: 0 2px 6px rgba(220, 53, 69, 0.5);
       
     }
 

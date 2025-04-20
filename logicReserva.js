@@ -17,21 +17,27 @@ btnRegistrar.addEventListener("click", function (e) {
 
     const errores = [];
 
-
+   
     if (nombreForm.value.trim() === "") errores.push("El campo nombre no puede estar vacío.");
     if (correoForm.value.trim() === "") errores.push("El campo email no puede estar vacío.");
     if (telefonoForm.value.trim() === "") errores.push("El campo teléfono no puede estar vacío.");
     if (paisForm.value.trim() === "") errores.push("El campo país no puede estar vacío.");
     if (fechaEntradaForm.value === "") errores.push("Debe seleccionar una fecha de entrada.");
     if (fechaSalidaForm.value === "") errores.push("Debe seleccionar una fecha de salida.");
-    if (huespedesForm.value === "" || parseInt(huespedesForm.value) < 1) errores.push("Debe ingresar un número válido de huéspedes.");
     if (habitacionForm.value === "") errores.push("Debe seleccionar un tipo de habitación.");
     if (tourForm.value === "") errores.push("Debe seleccionar un tour.");
     if (!terminosForm.checked) errores.push("Debe aceptar los términos y condiciones.");
 
+    const alertaErrores = document.getElementById("alertaErrores");
+
     if (errores.length > 0) {
-        alert("Errores:\n" + errores.join("\n"));
+        alertaErrores.style.display = "block";
+        alertaErrores.innerHTML = "<strong>Errores:</strong><br>" + errores.join("<br>");
+        window.scrollTo(0, 0); 
         return; 
+    } else {
+        alertaErrores.style.display = "none";
+        alertaErrores.innerHTML = "";
     }
 
     console.log("Nombre:", nombreForm.value);
