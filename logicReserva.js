@@ -18,12 +18,33 @@ btnRegistrar.addEventListener("click", function (e) {
     const errores = [];
 
    
-    if (nombreForm.value.trim() === "") errores.push("El campo nombre no puede estar vacío.");
-    if (correoForm.value.trim() === "") errores.push("El campo email no puede estar vacío.");
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    const textRegex = /^[a-zA-ZÀ-ÿ\s]+$/; // Letters and spaces, including accented characters
+
+   
+    if (nombreForm.value.trim() === "") {
+        errores.push("El campo nombre no puede estar vacío.");
+    } else if (!textRegex.test(nombreForm.value.trim())) {
+        errores.push("El campo nombre solo puede contener letras y espacios.");
+    }
+
+    if (correoForm.value.trim() === "") {
+        errores.push("El campo email no puede estar vacío.");
+    } else if (!emailRegex.test(correoForm.value.trim())) {
+        errores.push("El campo email no es válido.");
+    }
+
     if (telefonoForm.value.trim() === "") errores.push("El campo teléfono no puede estar vacío.");
-    if (paisForm.value.trim() === "") errores.push("El campo país no puede estar vacío.");
+
+    if (paisForm.value.trim() === "") {
+        errores.push("El campo país no puede estar vacío.");
+    } else if (!textRegex.test(paisForm.value.trim())) {
+        errores.push("El campo país solo puede contener letras y espacios.");
+    }
+
     if (fechaEntradaForm.value === "") errores.push("Debe seleccionar una fecha de entrada.");
     if (fechaSalidaForm.value === "") errores.push("Debe seleccionar una fecha de salida.");
+    if (huespedesForm.value === "" || parseInt(huespedesForm.value) < 1) errores.push("Debe ingresar un número válido de huéspedes.");
     if (habitacionForm.value === "") errores.push("Debe seleccionar un tipo de habitación.");
     if (tourForm.value === "") errores.push("Debe seleccionar un tour.");
     if (!terminosForm.checked) errores.push("Debe aceptar los términos y condiciones.");
@@ -33,8 +54,8 @@ btnRegistrar.addEventListener("click", function (e) {
     if (errores.length > 0) {
         alertaErrores.style.display = "block";
         alertaErrores.innerHTML = "<strong>Errores:</strong><br>" + errores.join("<br>");
-        window.scrollTo(0, 0); 
-        return; 
+        window.scrollTo(0, 0); // Scroll to the top of the page on errors
+        return; // Stop execution if errors exist
     } else {
         alertaErrores.style.display = "none";
         alertaErrores.innerHTML = "";
