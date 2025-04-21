@@ -255,6 +255,7 @@ h1{
     
     background: linear-gradient(to right, #2ecc71, #3498db);
     opacity: 100%;
+    height: auto;
 
 }
 [class*="colh1-"] {
@@ -278,6 +279,15 @@ h1{
   letter-spacing: 1px;
   padding: auto;      
 }
+
+
+#hrBlack{
+    border-color: pink;
+
+
+}
+
+
 
 #headtit a {
   text-decoration: none; 
