@@ -21,7 +21,7 @@ btnRegistrar.addEventListener("click", function (e) {
     const errores = [];
 
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const textRegex = /^[a-zA-ZÀ-ÿ\s]+$/; // Letters and spaces, including accented characters
+    const textRegex = /^[a-zA-ZÀ-ÿ\s]+$/; 
 
     if (nombreForm.value.trim() === "") {
         errores.push("El campo nombre no puede estar vacío.");
