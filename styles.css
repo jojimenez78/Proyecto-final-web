@@ -242,20 +242,20 @@ h1{
 [class*="col2-"] {
   float: left;
   padding: 5px;
-  border: 1px solid rgb(234, 255, 0);
+ /* border: 1px solid rgb(234, 255, 0);*/
   background-color: #f4f4f4;
 }
 
 [class*="col-"] {
     float: left;
     padding: 0%;
-    border: 1px solid rgb(234, 255, 0);
+   /* border: 1px solid rgb(234, 255, 0);*/
 }
 
 [class*="coldiv-"] {
     float: left;
     padding: 0px;
-    border: 1px solid rgb(243, 7, 7);
+  /*   border: 1px solid rgb(243, 7, 7);*/
     
     background: linear-gradient(to right, #2ecc71, #f8a1d1);
     opacity: 100%;
@@ -265,7 +265,7 @@ h1{
 [class*="colh1-"] {
   float: left;
   padding: 0px;
-  border: 1px solid rgb(243, 7, 7);
+ /* border: 1px solid rgb(243, 7, 7);*/
   
   background-color: pink;
   opacity: 100%;
